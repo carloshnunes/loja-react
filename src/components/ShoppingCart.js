@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
-const ShoppingCart = ({ cart, onRemoveFromCart, total }) => {
+function ShoppingCart() {
+  const { cart, removeFromCart, calculateTotal } = useContext(CartContext);
+
   return (
     <div>
-      <h2>Carrinho de Compras</h2>
+      <h1>Carrinho de Compras</h1>
       <ul>
         {cart.map((item) => (
           <li key={item.id}>
-            {item.name} - R$ {item.price.toFixed(2)}
-            <button onClick={() => onRemoveFromCart(item)}>
-              Remover do Carrinho
-            </button>
+            {item.name} - {item.quantity}
+            <button onClick={() => removeFromCart(item.id)}>Remover</button>
           </li>
         ))}
       </ul>
-      <p>Total: R$ {total.toFixed(2)}</p>
+      <h2>Total: {calculateTotal()}</h2>
     </div>
   );
-};
+}
 
 export default ShoppingCart;
