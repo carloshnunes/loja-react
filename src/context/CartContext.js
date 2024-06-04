@@ -1,39 +1,36 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useReducer } from 'react';
 import PropTypes from 'prop-types';
 
-export const CartContext = createContext();
+const CartContext = createContext();
+
+const cartReducer = (state, action) => {
+  switch (action.type) {
+    case 'ADD_TO_CART':
+      return [...state, action.payload];
+    case 'REMOVE_FROM_CART':
+      return state.filter((item) => item.id !== action.payload);
+    default:
+      return state;
+  }
+};
 
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState(() => {
-    const savedCart = localStorage.getItem('cart');
-    return savedCart ? JSON.parse(savedCart) : [];
-  });
+  const [cart, dispatch] = useReducer(cartReducer, []);
 
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart));
-  }, [cart]);
-
-  const addToCart = (product) => {
-    setCart([...cart, { ...product, quantity: 1 }]);
+  const addToCart = (item) => {
+    dispatch({ type: 'ADD_TO_CART', payload: item });
   };
 
-  const removeFromCart = (productId) => {
-    setCart(cart.filter((item) => item.id !== productId));
-  };
-
-  const calculateTotal = () => {
-    return cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  const removeFromCart = (id) => {
+    dispatch({ type: 'REMOVE_FROM_CART', payload: id });
   };
 
   return (
-    <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, calculateTotal }}
-    >
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );
 };
 
-CartProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+export { CartContext };
+export default CartProvider;

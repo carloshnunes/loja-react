@@ -1,16 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ProductList from './pages/ProductList';
-import ShoppingCart from './pages/ShoppingCart';
+import CartProvider from './context/CartContext';
+import ProductsPage from './pages/ProductsPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/cart" element={<ShoppingCart />} />
-        <Route path="/" element={<ProductList />} />
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<ProductsPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 
