@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from 'react';
+import { CartContext } from '../context/CartContext';
 import PropTypes from 'prop-types';
 
 const CartContext = createContext();

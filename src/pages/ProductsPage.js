@@ -1,15 +1,17 @@
-// ProductsPage.js
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-import ProductList from '../components/ProductList';
 
 const ProductsPage = () => {
   const { addToCart } = useContext(CartContext);
 
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
+
   return (
     <div>
-      <h1>Products</h1>
-      <ProductList addToCart={addToCart} />
+      {/* Renderize seus produtos aqui */}
+      <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
     </div>
   );
 };
