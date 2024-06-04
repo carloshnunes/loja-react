@@ -4,13 +4,14 @@ import products from '../data/products.json';
 import ProductList from '../components/ProductList';
 
 const ProductsPage = () => {
-  const { addToCart, removeFromCart } = useContext(CartContext);
+  const { addToCart, removeFromCart, cart } = useContext(CartContext);
 
   return (
     <ProductList
       addToCart={addToCart}
       removeFromCart={removeFromCart}
       products={products}
+      cart={cart}
     />
   );
 };

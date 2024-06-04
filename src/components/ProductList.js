@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
-const ProductList = ({ addToCart, removeFromCart, products }) => {
+const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
   const [productList, setProductList] = useState(products);
+
+  console.log(cart);
 
   return (
     <div>
