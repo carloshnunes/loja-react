@@ -1,7 +1,9 @@
 export const fetchProducts = async () => {
-  const response = await fetch('/api/j-application/products.json');
-  if (!response.ok) {
-    throw new Error('Failed to fetch products');
+  try {
+    const response = await fetch('https://api.example.com/products');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error('Error fetching products. Please try again later.');
   }
-  return await response.json();
 };
