@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ProductList.css'; // Certifique-se de criar e importar o CSS
 
 const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
   const [productList, setProductList] = useState(products);
@@ -6,9 +7,9 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
   console.log(cart);
 
   return (
-    <div>
+    <div className="product-list">
       {productList.map((product) => (
-        <div key={product.id}>
+        <div key={product.id} className="product-item">
           <h2>{product.name}</h2>
           <p>{product.price?.finalPrice || 0} USD</p>
           <button onClick={() => addToCart(product)}>Add to Cart</button>

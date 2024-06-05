@@ -19,12 +19,10 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (item) => {
     dispatch({ type: 'ADD_TO_CART', payload: item });
-    console.log('addToCart');
   };
 
   const removeFromCart = (id) => {
     dispatch({ type: 'REMOVE_FROM_CART', payload: id });
-    console.log('removeFromCart');
   };
 
   return (

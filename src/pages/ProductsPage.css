@@ -1,0 +1,33 @@
+/* ProductsPage.css */
+.products-page {
+  padding: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.product-item h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+.product-item button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.product-item button:hover {
+  background-color: #218838;
+}
