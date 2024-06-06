@@ -13,10 +13,10 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <nav>
-        <h1>Compras</h1>
+        <h2>Compras</h2>
         <ul>
           <li>
-            <Link>
+            <Link to="#">
               <img src={fireIcon} alt="Promotions" />
               Promoções
             </Link>
@@ -28,37 +28,37 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="#">
               <img src={receiptIcon} alt="Orders" />
               Pedidos
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="#">
               <img src={couponIcon} alt="Coupons" />
               Cupons
             </Link>
           </li>
         </ul>
-        <h1>Administrativo</h1>
+        <h2>Administrativo</h2>
         <ul>
           <li>
-            <Link>
+            <Link to="#">
               <img src={storeIcon} alt="Stores" />
               Estabelecimentos
             </Link>
           </li>
         </ul>
-        <h1>Ajuda</h1>
+        <h2>Ajuda</h2>
         <ul>
           <li>
-            <Link>
+            <Link to="#">
               <img src={whatsappIcon} alt="Whatsapp" />
               Whatsapp
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="#">
               <img src={phoneIcon} alt="Distributor Contact" />
               Contato Distribuidora
             </Link>
