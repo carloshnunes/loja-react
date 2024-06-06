@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import products from '../data/products.json';
 import ProductList from '../components/ProductList';
-import './ProductsPage.css'; // Importação do CSS
+import './ProductsPage.css';
 
 const ProductsPage = () => {
   const { addToCart, removeFromCart, cart } = useContext(CartContext);
