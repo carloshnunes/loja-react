@@ -1,52 +1,62 @@
-/* ProductList.css */
 .product-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
   padding: 20px;
 }
 
 .product-item {
+  display: flex;
+  align-items: center;
   border: 1px solid #ddd;
-  border-radius: 5px;
   padding: 10px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .product-item-image {
-  width: 100%;
+  width: 100px;
   height: auto;
-  margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .product-item-details {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-item-name {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 0;
 }
 
 .product-item-price {
   margin: 5px 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
-.add-button,
-.remove-button {
+.product-item-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-button {
   background-color: #007bff;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
-.add-button:hover,
-.remove-button:hover {
+.quantity-button:hover {
   background-color: #0056b3;
+}
+
+.product-quantity {
+  margin: 0 10px;
+  font-size: 1.2em;
 }

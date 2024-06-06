@@ -20,15 +20,23 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
             <p className="product-item-price">
               {product.price?.finalPrice || 0} USD
             </p>
-            <button className="add-button" onClick={() => addToCart(product)}>
-              Add to Cart
-            </button>
-            <button
-              className="remove-button"
-              onClick={() => removeFromCart(product.id)}
-            >
-              Remove From Cart
-            </button>
+            <div className="product-item-actions">
+              <button
+                className="quantity-button"
+                onClick={() => removeFromCart(product.id)}
+              >
+                -
+              </button>
+              <span className="product-quantity">
+                {cart.find((item) => item.id === product.id)?.quantity || 0}
+              </span>
+              <button
+                className="quantity-button"
+                onClick={() => addToCart(product)}
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       ))}
