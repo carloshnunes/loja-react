@@ -2,13 +2,31 @@
   padding: 20px;
 }
 
-.search-bar {
-  width: 100%;
-  padding: 10px;
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  margin-right: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 16px;
+}
+
+.filters {
+  display: flex;
+}
+
+.order-select,
+.display-select {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .product-item {
