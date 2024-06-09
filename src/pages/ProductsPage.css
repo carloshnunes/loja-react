@@ -1,5 +1,6 @@
 .products-page {
   padding: 20px;
+  background-color: #f7f7ff;
 }
 
 .search-container {
@@ -11,10 +12,23 @@
 
 .search-bar {
   flex: 1;
-  padding: 10px;
+  padding: 10px 20px;
   margin-right: 20px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 25px; /* Arredondar bordas */
+  font-size: 16px; /* Aumentar o tamanho da fonte */
+  outline: none; /* Remover outline padrão */
+  transition:
+    border 0.3s,
+    box-shadow 0.3s;
+}
+.search-bar::placeholder {
+  color: #aaa; /* Cor do placeholder */
+}
+
+.search-bar:focus {
+  border: 1px solid #007bff; /* Cor da borda ao focar */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Sombra ao focar */
 }
 
 .filters {
@@ -58,8 +72,7 @@
   font-size: 1.2em;
 }
 
-.add-button,
-.remove-button {
+.add-button {
   background-color: #007bff;
   color: white;
   border: none;
@@ -69,7 +82,20 @@
   font-size: 1em;
 }
 
-.add-button:hover,
+.remove-button {
+  background-color: #ad1a1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.add-button:hover {
+  background-color: #007bff;
+}
+
 .remove-button:hover {
-  background-color: #0056b3;
+  background-color: #ad1a1a;
 }
