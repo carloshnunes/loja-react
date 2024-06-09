@@ -28,7 +28,7 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
                 -
               </button>
               <span className="product-quantity">
-                {cart.find((item) => item.id === product.id)?.quantity || 0}
+                {cart.filter((item) => item.id === product.id)?.length || 0}
               </span>
               <button
                 className="quantity-button"
