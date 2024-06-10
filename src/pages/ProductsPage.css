@@ -12,7 +12,7 @@
   width: 250px;
   padding: 20px;
   border-left: 1px solid #ddd;
-  background-color: #ffffff;
+  background-color: #f7f7ff;
 }
 
 .search-container {
@@ -61,7 +61,7 @@
   padding: 10px;
   margin-left: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .filter-group {
@@ -80,4 +80,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.sort-label-second {
+  margin-left: 5px;
 }

@@ -10,19 +10,23 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
     <div className="product-list">
       {productList.map((product) => (
         <div key={product.id} className="product-item">
-          <img
-            src={product.image}
-            alt={product.name}
-            className="product-item-image"
-          />
-          <div className="product-item-details">
+          <div className="product-item-header">
             <h2 className="product-item-name">{product.name}</h2>
+          </div>
+          <div className="product-item-details">
+            <div className="product-item-category"></div>
+            <img
+              src={product.image}
+              alt={product.name}
+              className="product-item-image"
+            />
             <p className="product-item-price">
               {product.price?.finalPrice || 0} USD
             </p>
             <div className="product-item-actions">
+              <p>Quantidade(un)</p>
               <button
-                className="quantity-button"
+                className="quantity-button-minus"
                 onClick={() => removeFromCart(product.id)}
               >
                 -
@@ -38,6 +42,8 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
               </button>
             </div>
           </div>
+          <div className="product-item-footer"></div>
+          <h3 className="product-item-maker">{product.maker}</h3>
         </div>
       ))}
     </div>

@@ -8,10 +8,16 @@ import couponIcon from './images/ticket.png';
 import storeIcon from './images/pharmacy.png';
 import whatsappIcon from './images/phone-message.png';
 import phoneIcon from './images/telephone.png';
+import pharmacy from './images/pharmacy.png';
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
+      <img src={pharmacy} alt="Pharmacy" />
+      <ul className="clientLogin">
+        <h2>Farmácia São João</h2>
+        <p>000.000.000/000-00</p>
+      </ul>
       <nav>
         <h2>COMPRAS</h2>
         <ul>
@@ -40,7 +46,7 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <h2>Administrativo</h2>
+        <h2>ADMINISTRATIVO</h2>
         <ul>
           <li>
             <Link to="#">
@@ -49,7 +55,7 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <h2>Ajuda</h2>
+        <h2>AJUDA</h2>
         <ul>
           <li>
             <Link to="#">

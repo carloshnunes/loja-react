@@ -36,10 +36,11 @@ const ProductsPage = () => {
             <option value="price-asc">Preço (Baixo para Alto)</option>
             <option value="price-desc">Preço (Alto para Baixo)</option>
           </select>
+          <span className="sort-label-second"> Exibição: </span>
           <select className="display-select">
-            <option value="10">Exibição: 10</option>
-            <option value="20">Exibição: 20</option>
-            <option value="50">Exibição: 50</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
           </select>
         </div>
         <ProductList
