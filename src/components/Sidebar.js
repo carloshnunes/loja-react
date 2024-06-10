@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <nav>
-        <h2>Compras</h2>
+        <h2>COMPRAS</h2>
         <ul>
           <li>
             <Link to="#">

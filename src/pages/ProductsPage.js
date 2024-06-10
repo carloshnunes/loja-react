@@ -29,6 +29,7 @@ const ProductsPage = () => {
             onChange={handleSearch}
             className="search-bar"
           />
+          <span className="sort-label">Ordenar por:</span>
           <select className="order-select">
             <option value="name-asc">Nome (A - Z)</option>
             <option value="name-desc">Nome (Z - A)</option>

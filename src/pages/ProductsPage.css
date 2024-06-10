@@ -50,6 +50,12 @@
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
+.sort-label {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
 .order-select,
 .display-select {
   padding: 10px;

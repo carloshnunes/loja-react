@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 0px;
+  padding: 0 20px;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #3cba92;
   height: 64px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -21,6 +22,7 @@
 .icons {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap; /* Ajuste adicionado */
 }
 
 .cart-details {
@@ -33,6 +35,8 @@
 .cart-icon {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  margin-top: -20px;
 }
 
 .cart-icon img {
@@ -46,12 +50,17 @@
 }
 
 .cart-minimum {
-  margin-top: 5px;
-  font-size: 0.9em;
+  font-size: 0.8em; /* Diminuir tamanho da fonte */
   color: #888;
+  white-space: nowrap;
+  margin-left: 10px; /* Ajuste de margem */
 }
 
 .user-icon img {
   width: 24px;
   height: auto;
+}
+
+.userName {
+  margin-top: -10px;
 }

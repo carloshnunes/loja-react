@@ -16,13 +16,10 @@ const Header = () => {
       </div>
       <div className="icons">
         <div className="cart-details">
-          <h2>Nexfar</h2>
+          <p className="userName">Nexfar</p>
           <Link to="/cart" className="cart-icon">
             <img src={cartIcon} alt="Cart" />{' '}
-            <span className="cart-value">
-              R$
-              {totalFromCart(cart)}
-            </span>
+            <span className="cart-value">R${totalFromCart(cart)}</span>
           </Link>
           <span className="cart-minimum">Pedido mínimo: R$ 150,00</span>
         </div>
