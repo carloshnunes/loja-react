@@ -1,6 +1,18 @@
 .products-page {
-  padding: 20px;
+  display: flex;
   background-color: #f7f7ff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  background-color: #ffffff;
 }
 
 .search-container {
@@ -10,29 +22,32 @@
   margin-bottom: 20px;
 }
 
+.search-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
 .search-bar {
   flex: 1;
   padding: 10px 20px;
   margin-right: 20px;
   border: 1px solid #ddd;
-  border-radius: 25px; /* Arredondar bordas */
-  font-size: 16px; /* Aumentar o tamanho da fonte */
-  outline: none; /* Remover outline padrão */
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
   transition:
     border 0.3s,
     box-shadow 0.3s;
 }
+
 .search-bar::placeholder {
-  color: #aaa; /* Cor do placeholder */
+  color: #aaa;
 }
 
 .search-bar:focus {
-  border: 1px solid #007bff; /* Cor da borda ao focar */
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Sombra ao focar */
-}
-
-.filters {
-  display: flex;
+  border: 1px solid #560d68;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
 .order-select,
@@ -43,59 +58,20 @@
   border-radius: 5px;
 }
 
-.product-item {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  padding: 10px;
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
   margin-bottom: 10px;
-  border-radius: 5px;
 }
 
-.product-item-image {
-  width: 100px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.product-item-details {
-  flex: 1;
-}
-
-.product-item-name {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.product-item-price {
-  margin: 5px 0;
-  font-size: 1.2em;
-}
-
-.add-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-.remove-button {
-  background-color: #ad1a1a;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-.add-button:hover {
-  background-color: #007bff;
-}
-
-.remove-button:hover {
-  background-color: #ad1a1a;
+.filterHeader {
+  color: #7c0e86;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
