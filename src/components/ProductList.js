@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ProductList.css';
+import productPlaceholder from './images/medicine.png';
 
 const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
   const [productList] = useState(products);
@@ -14,9 +15,8 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
             <h2 className="product-item-name">{product.name}</h2>
           </div>
           <div className="product-item-details">
-            <div className="product-item-category"></div>
             <img
-              src={product.image}
+              src={productPlaceholder}
               alt={product.name}
               className="product-item-image"
             />
