@@ -53,7 +53,7 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
                 </button>
               </div>
               <div className="product-item-value">
-                Valor: {product.price?.finalPrice || 0} USD
+                Valor: {product.price?.finalPrice || 0} R$
               </div>
             </div>
           </div>
