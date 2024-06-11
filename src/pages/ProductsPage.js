@@ -51,34 +51,34 @@ const ProductsPage = () => {
         />
       </div>
       <div className="sidebar">
-        <h3 className="filterHeader">Ações Comerciais</h3>
+        <h3 className="filterHeader">AÇÕES COMERCIAIS</h3>
         <div className="filter-group">
-          <label>
-            <input type="checkbox" /> Em Promoção
+          <label className="filter-option">
+            <input type="checkbox" /> EM PROMOÇÃO
           </label>
-          <label>
-            <input type="checkbox" /> Em Oferta
+          <label className="filter-option">
+            <input type="checkbox" /> EM OFERTA
           </label>
         </div>
-        <h3 className="filterHeader">Estoque</h3>
+        <h3 className="filterHeader">ESTOQUE</h3>
         <div className="filter-group">
-          <label>
-            <input type="checkbox" /> Estoque Disponível
+          <label className="filter-option">
+            <input type="checkbox" /> ESTOQUE DISPONÍVEL
           </label>
         </div>
-        <h3 className="filterHeader">Categorias</h3>
+        <h3 className="filterHeader">CATEGORIAS</h3>
         <div className="filter-group">
-          <label>
-            <input type="checkbox" /> Genéricos
+          <label className="filter-option">
+            <input type="checkbox" /> GENÉRICOS
           </label>
-          <label>
-            <input type="checkbox" /> Similares
+          <label className="filter-option">
+            <input type="checkbox" /> SIMILARES
           </label>
-          <label>
-            <input type="checkbox" /> Psicotrópicos
+          <label className="filter-option">
+            <input type="checkbox" /> PSICOTRÓPICOS
           </label>
-          <label>
-            <input type="checkbox" /> Higiene e Beleza
+          <label className="filter-option">
+            <input type="checkbox" /> HIGIENE E BELEZA
           </label>
         </div>
       </div>

@@ -68,15 +68,23 @@
   margin-bottom: 20px;
 }
 
+.filter-option {
+  color: #301b2c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .filter-group label {
   display: block;
   margin-bottom: 10px;
 }
 
 .filterHeader {
-  color: #7c0e86;
+  color: #5b127d;
   font-family: Lato;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

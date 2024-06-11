@@ -1,6 +1,6 @@
 .sidebar {
   width: 250px;
-  background-color: #f7f7ff;
+  background-color: #fff;
   padding: 20px;
   border-right: 1px solid #ddd;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -14,6 +14,22 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+}
+
+.sidebar-header {
+  color: #301b2c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sidebar-options {
+  color: #301b2c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -32,13 +48,19 @@
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: background-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    padding-right 0.3s ease;
 }
 
 .sidebar nav ul li a:hover {
-  background-color: #e9ecef;
+  background-color: #f7f7ff;
+  color: #3cba92;
   border-radius: 5px;
   padding: 5px;
+  padding-right: 30px; /* Aumenta o tamanho do hover apenas para a direita */
+  box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar nav ul li a img {

@@ -7,62 +7,65 @@
 
 .product-item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 25px;
   background-color: #fff;
   width: 808px;
   height: 234px;
-  flex-shrink: 0;
-  flex-direction: column;
-  border-radius: 25px;
 }
 
 .product-item-header {
-  text-align: start;
-}
-
-.product-item-image {
-  width: 100%;
-  height: auto;
-  margin-right: 20px;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-.product-item-details {
-  flex: 1;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 
 .product-item-name {
-  font-size: 1.5em;
-  margin: 0;
-  text-align: start;
+  color: #301b2c;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.product-item-price {
-  margin: 5px 0;
-  font-size: 1.2em;
-}
-
-.product-item-actions {
+.product-item-body {
   display: flex;
   align-items: center;
-  margin-top: 10px;
 }
-.quantity-button-minus {
-  background-color: #db1f1f;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 25px;
+
+.product-item-image {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.product-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-item-price,
+.product-item-stock,
+.product-item-quantity,
+.product-item-value {
   font-size: 1em;
 }
 
+.product-item-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.code-product {
+  color: white;
+  font-size: 12px;
+}
+
+.quantity-button-minus,
 .quantity-button {
   background-color: #3cba92;
   color: white;
@@ -71,6 +74,10 @@
   cursor: pointer;
   border-radius: 25px;
   font-size: 1em;
+}
+
+.quantity-button-minus {
+  background-color: #db1f1f;
 }
 
 .quantity-button-minus:hover {
@@ -84,4 +91,45 @@
 .product-quantity {
   margin: 0 10px;
   font-size: 1.2em;
+}
+
+.product-item-footer {
+  text-align: start;
+}
+
+.product-item-maker {
+  color: #301b2c;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.barcode-logo {
+  text-align: end;
+}
+
+.baloon-sku {
+  background-color: #301b2c;
+  border-radius: 25px;
+  padding: 5px 10px;
+  display: inline-block;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.baloon-sku p {
+  margin: 0;
+}
+
+.balloon {
+  background-color: #ebebff;
+  border-radius: 25px;
+  padding: 5px 10px;
+  display: inline-block;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.balloon p {
+  margin: 0;
 }

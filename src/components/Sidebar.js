@@ -19,51 +19,51 @@ const Sidebar = () => {
         <p>000.000.000/000-00</p>
       </ul>
       <nav>
-        <h2>COMPRAS</h2>
+        <h2 className="sidebar-header">COMPRAS</h2>
         <ul>
-          <li>
+          <li className="sidebar-options">
             <Link to="#">
               <img src={fireIcon} alt="Promotions" />
               Promoções
             </Link>
           </li>
-          <li>
+          <li className="sidebar-options">
             <Link to="/">
               <img src={boxIcon} alt="Products" />
               Produtos
             </Link>
           </li>
-          <li>
+          <li className="sidebar-options">
             <Link to="#">
               <img src={receiptIcon} alt="Orders" />
               Pedidos
             </Link>
           </li>
-          <li>
+          <li className="sidebar-options">
             <Link to="#">
               <img src={couponIcon} alt="Coupons" />
               Cupons
             </Link>
           </li>
         </ul>
-        <h2>ADMINISTRATIVO</h2>
+        <h2 className="sidebar-header">ADMINISTRATIVO</h2>
         <ul>
-          <li>
+          <li className="sidebar-options">
             <Link to="#">
               <img src={storeIcon} alt="Stores" />
               Estabelecimentos
             </Link>
           </li>
         </ul>
-        <h2>AJUDA</h2>
+        <h2 className="sidebar-header">AJUDA</h2>
         <ul>
-          <li>
+          <li className="sidebar-options">
             <Link to="#">
               <img src={whatsappIcon} alt="Whatsapp" />
               Whatsapp
             </Link>
           </li>
-          <li>
+          <li className="sidebar-options">
             <Link to="#">
               <img src={phoneIcon} alt="Distributor Contact" />
               Contato Distribuidora
