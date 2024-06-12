@@ -1,0 +1,44 @@
+.checkout-container {
+  display: flex;
+}
+
+.checkout-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-summary {
+  flex: 1;
+  margin-left: 20px; /* Adicionado margem à esquerda */
+}
+
+.checkout-section {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background-color: #fff;
+  height: auto;
+  padding: 10px;
+}
+
+.checkout-sidebar {
+  width: 250px; /* Definindo a largura da barra lateral */
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Estilos para os títulos das seções */
+.checkout-section h2 {
+  margin-bottom: 10px;
+}
+
+/* Estilos para os campos de entrada dentro das seções */
+.checkout-section input,
+.checkout-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
