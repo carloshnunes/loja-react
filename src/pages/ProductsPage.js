@@ -20,6 +20,7 @@ const ProductsPage = () => {
   return (
     <div className="products-page">
       <div className="main-content">
+        <div className="search-bar"></div>
         <div className="search-container">
           <img src={searchIcon} alt="Search" className="search-icon" />
           <input
@@ -29,14 +30,14 @@ const ProductsPage = () => {
             onChange={handleSearch}
             className="search-bar"
           />
-          <span className="sort-label">Ordenar por:</span>
+          <p className="sort-label">Ordenar por:</p>
           <select className="order-select">
             <option value="name-asc">Nome (A - Z)</option>
             <option value="name-desc">Nome (Z - A)</option>
             <option value="price-asc">Preço (Baixo para Alto)</option>
             <option value="price-desc">Preço (Alto para Baixo)</option>
           </select>
-          <span className="sort-label-second"> Exibição: </span>
+          <p className="sort-label-second"> Exibição: </p>
           <select className="display-select">
             <option value="10">10</option>
             <option value="20">20</option>

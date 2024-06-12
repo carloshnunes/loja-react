@@ -77,7 +77,7 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
           </div>
           <div className="product-item-footer">
             <button className="footer-button">Similares</button>
-            <button className="footer-button">Cimed</button>
+            <button className="footer-button">{product.maker}</button>
           </div>
         </div>
       ))}
