@@ -22,7 +22,7 @@
 .icons {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap; /* Ajuste adicionado */
+  flex-wrap: nowrap;
 }
 
 .cart-details {
@@ -50,10 +50,10 @@
 }
 
 .cart-minimum {
-  font-size: 0.8em; /* Diminuir tamanho da fonte */
+  font-size: 0.8em;
   color: #888;
   white-space: nowrap;
-  margin-left: 10px; /* Ajuste de margem */
+  margin-left: 10px;
 }
 
 .user-icon img {

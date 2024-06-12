@@ -11,66 +11,76 @@
   border: 1px solid #ddd;
   border-radius: 25px;
   background-color: #fff;
-  height: 234px;
+  height: auto;
+  padding: 10px;
 }
 
 .product-item-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 1px solid #ddd;
-}
-
-.product-item-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
 }
 
-.product-item-header {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  margin-bottom: 10px; /* Adjusted to add some spacing */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .product-item-footer {
-  border-top: none;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  margin-top: 10px; /* Adjusted to add some spacing */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinhamento à esquerda */
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
 }
 
 .product-item-body {
   display: flex;
   align-items: center;
-  padding: 10px 20px; /* Reduced padding */
+  padding: 10px 20px;
   gap: 20px;
 }
 
 .product-item-info {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
 }
 
-.product-item-price,
-.product-item-stock,
-.product-item-quantity,
-.product-item-value {
-  font-size: 1em;
-  flex: 1;
-  padding: top;
+.product-item-details {
+  display: flex;
+  justify-content: space-between; /* Distribui os detalhes horizontalmente */
+  align-items: center;
+  width: 100%;
+}
+
+.product-item-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item-value,
+.product-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .product-item-name {
   color: #301b2c;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .product-item-image {
@@ -116,14 +126,7 @@
   color: #301b2c;
   font-family: Lato;
   font-size: 10px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-}
-
-.barcode-logo,
-.info-logo {
-  justify-content: flex-end;
 }
 
 .baloon-sku {
@@ -148,4 +151,51 @@
 
 .balloon p {
   margin: 0;
+}
+
+.barcode-logo,
+.info-logo {
+  width: 24px;
+  height: auto;
+}
+
+.delete-icon {
+  cursor: pointer;
+  width: 24px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.footer-button {
+  background-color: #ebebff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #301b2c;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.maker-button {
+  background-color: #ebebff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #301b2c;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-button:hover {
+  background-color: #c0c0c0;
+}
+
+.label {
+  font-weight: bold;
 }

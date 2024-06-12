@@ -5,6 +5,7 @@ import { CartContext, totalFromCart } from '../context/CartContext';
 import nexfarIcon from './images/nexfar.png';
 import cartIcon from './images/shopping-cart.png';
 import userIcon from './images/user-icon.png';
+import bellIcon from './images/bell.png';
 
 const Header = () => {
   const { cart } = useContext(CartContext);
@@ -23,6 +24,7 @@ const Header = () => {
           </Link>
           <span className="cart-minimum">Pedido mínimo: R$ 150,00</span>
         </div>
+        <img src={bellIcon}></img>
         <span className="user-icon">
           <img src={userIcon} alt="User" />
         </span>

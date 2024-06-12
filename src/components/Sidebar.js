@@ -15,7 +15,7 @@ const Sidebar = () => {
     <aside className="sidebar">
       <img src={pharmacy} alt="Pharmacy" />
       <ul className="clientLogin">
-        <h2>Farmácia São João</h2>
+        <p>Farmácia São João</p>
         <p>000.000.000/000-00</p>
       </ul>
       <nav>
