@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
+import { CartContext, totalFromCart } from '../context/CartContext';
 import Checkout from '../components/Checkout';
 import './CheckoutPage.css'; // Importando o CSS para a página
 
@@ -11,29 +11,32 @@ const CheckoutPage = () => {
       <div className="checkout-details">
         <div className="checkout-section">
           {/* Opções de pagamento */}
-          <h2>Opções de Pagamento</h2>
-          {/* Aqui você pode adicionar seus campos para opções de pagamento */}
+          <h2 className="titles-checkout">Opção de Pagamento</h2>
+          <p>O valor total dos produtos é de R$ 460,00 (com impostos).</p>
+          <label htmlFor="payment-method"></label>
+          <select id="payment-method">
+            <option value="">Selecione a forma de pagamento</option>
+            <option value="boleto">Boleto</option>
+          </select>
         </div>
         <div className="checkout-section">
-          {/* Endereço de entrega */}
-          <h2>Endereço de Entrega</h2>
-          {/* Campos para endereço de entrega */}
+          <h2 className="titles-checkout">Endereço de Entrega</h2>
+          <p>Rua Lauro Linhares, Nº390</p>
+          <p>Florianópolis - SC / 88130-000</p>
         </div>
         <div className="checkout-section">
-          {/* Informações adicionais */}
-          <h2>Informações Adicionais</h2>
-          {/* Campos para informações adicionais */}
-        </div>
-        <div className="checkout-summary">
-          <h1>Checkout</h1>
-          <Checkout cart={cart} />
+          <h2 className="titles-checkout">Informações Adicionais</h2>
+          <p>Favor entregar o pedido no período matutino.</p>
         </div>
       </div>
       <div className="checkout-sidebar">
-        {/* Barra lateral com o valor total da compra */}
-
         <h2>Resumo da Compra</h2>
-        {/* Aqui você pode mostrar o resumo da compra, como o subtotal, impostos, e o total */}
+        <p>Total (sem impostos): R${totalFromCart(cart)}</p>
+        <p>Impostos: R$ 10,00</p>
+        <p>
+          <strong>{cart}</strong>
+        </p>
+        <button className="submit-order">Enviar Pedido{Checkout}</button>
       </div>
     </div>
   );

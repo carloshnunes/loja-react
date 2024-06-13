@@ -3,13 +3,15 @@
   padding: 20px;
   border-right: 1px solid #ddd;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  background-color: #ffffff;
 }
 
 .sidebar h2 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #301b2c;
   font-family: Lato;
-  font-size: 14px;
+  font-size: 16px;
   font-style: bold;
   font-weight: 700;
   line-height: normal;
@@ -24,10 +26,10 @@
 }
 
 .sidebar-options {
-  color: #301b2c;
-  font-size: 12px;
+  color: #9b9299;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: normal;
 }
 
@@ -44,7 +46,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: #9b9299;
   font-weight: 500;
   transition:
     background-color 0.3s ease,
@@ -65,6 +67,7 @@
   width: 24px;
   height: auto;
   margin-right: 10px;
+  color: #3cba92;
 }
 
 .clientLogin {

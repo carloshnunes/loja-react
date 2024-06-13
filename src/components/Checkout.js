@@ -14,7 +14,7 @@ const Checkout = ({ cart }) => {
         {cart.map((item) => (
           <div key={item.id} className="checkout-item">
             <h3>{item.name}</h3>
-            <p>Price: {item.price?.finalPrice || 0} USD</p>
+            <p>Price: {item.price?.finalPrice || 0} R$</p>
           </div>
         ))}
       </div>

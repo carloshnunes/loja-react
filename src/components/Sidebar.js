@@ -34,7 +34,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="sidebar-options">
-            <Link to="#">
+            <Link to="/checkout">
               <img src={receiptIcon} alt="Orders" />
               Pedidos
             </Link>

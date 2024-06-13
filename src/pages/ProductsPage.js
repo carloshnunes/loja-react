@@ -51,7 +51,7 @@ const ProductsPage = () => {
           cart={cart}
         />
       </div>
-      <div className="sidebar">
+      <div className="sidebar-secundaria">
         <h3 className="filterHeader">AÇÕES COMERCIAIS</h3>
         <div className="filter-group">
           <label className="filter-option">

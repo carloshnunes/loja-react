@@ -63,8 +63,8 @@ const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
                   </button>
                 </div>
                 <div className="product-item-detail">
-                  <span className="label">Valor:</span>{' '}
-                  {product.price?.finalPrice || 0} R$
+                  <span className="label">Valor:</span> R$:
+                  {product.price?.finalPrice || 0}
                 </div>
                 <img
                   src={deleteIcon}

@@ -1,44 +1,93 @@
 .checkout-container {
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f7f7ff;
 }
 
 .checkout-details {
   flex: 2;
-  display: flex;
-  flex-direction: column;
+  margin-right: 20px;
 }
 
 .checkout-summary {
-  flex: 1;
-  margin-left: 20px; /* Adicionado margem à esquerda */
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #fff;
 }
 
 .checkout-section {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  background-color: #fff;
-  height: auto;
+  margin-bottom: 20px;
   padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 0;
 }
 
-.checkout-sidebar {
-  width: 250px; /* Definindo a largura da barra lateral */
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-/* Estilos para os títulos das seções */
 .checkout-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.checkout-section p {
   margin-bottom: 10px;
 }
 
-/* Estilos para os campos de entrada dentro das seções */
+.checkout-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkout-section select,
 .checkout-section input,
 .checkout-section textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.checkout-sidebar {
+  width: 300px;
+  height: 220px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin-top: 0;
+}
+
+.checkout-sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.checkout-sidebar p {
+  margin-bottom: 10px;
+}
+
+.titles-checkout {
+  border-bottom: 1px solid #999c9b;
+}
+
+.submit-order {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.submit-order:hover {
+  background-color: #45a049;
 }
