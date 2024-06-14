@@ -1,12 +1,33 @@
-.checkout-container {
+.menu-header-checkout {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f7f7ff;
+}
+.botao-header-pedido {
+  background-color: #3cba92;
+  border: none;
+  color: #fff;
+  padding: 10px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  font-family: Lato;
+  font-weight: 700;
+}
+
+.checkout-container {
   justify-content: space-between;
   padding: 20px;
   background-color: #f7f7ff;
 }
 
 .checkout-details {
-  flex: 2;
+  flex: 1;
   margin-right: 20px;
 }
 
@@ -25,6 +46,10 @@
   border-radius: 15px;
   background-color: #fff;
   margin-top: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .checkout-section h2 {
@@ -35,6 +60,7 @@
 
 .checkout-section p {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .checkout-section label {
