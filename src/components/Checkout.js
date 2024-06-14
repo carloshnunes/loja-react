@@ -1,7 +1,7 @@
 import React from 'react';
 import './Checkout.css';
 
-const Checkout = ({ cart }) => {
+const Checkout = ({ cart = [] }) => {
   const total = cart.reduce(
     (acc, product) => acc + (product.price?.finalPrice || 0),
     0

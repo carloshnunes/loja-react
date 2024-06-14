@@ -24,10 +24,12 @@ const Header = () => {
           </Link>
           <span className="cart-minimum">Pedido mínimo: R$ 150,00</span>
         </div>
-        <img src={bellIcon}></img>
-        <span className="user-icon">
+        <div className="notification-icon">
+          <img src={bellIcon}></img>
+        </div>
+        <div className="user-icon">
           <img src={userIcon} alt="User" />
-        </span>
+        </div>
       </div>
     </header>
   );

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext, totalFromCart } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 import trashIcon from '../components/images/trash.png';
 import './CartPage.css';
 
@@ -30,11 +31,15 @@ const CartPage = () => {
   return (
     <div className="cart-page">
       <div className="menu-header-carrinho">
-        <button className="botao-header-voltar">⬅ VOLTAR</button>
+        <Link to="/">
+          <button className="botao-header-voltar">⬅ VOLTAR</button>
+        </Link>
         <div>
-          <button className="botao-header-pagamento">
-            IR PARA PAGAMENTO ⭢
-          </button>
+          <Link to="/checkout">
+            <button className="botao-header-pagamento">
+              IR PARA PAGAMENTO ⭢
+            </button>
+          </Link>
           <button className="botao-header-limpar">
             LIMPAR CARRINHO
             <img src={trashIcon} alt="Delete" className="delete-icon" />
@@ -83,8 +88,8 @@ const CartPage = () => {
       </div>
       <div className="user-info">
         <div className="header-user-info">
-          <h3>CLIENTE</h3>
-          <h3 className="h3-header-user">VER DETALHES</h3>
+          <h3 className="h3-header-user">CLIENTE</h3>
+          <h3 className="h3-header-detalhe-user">VER DETALHES</h3>
         </div>
         <p>Nome: João Silva</p>
         <p>Email: joao.silva@example.com</p>

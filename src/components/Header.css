@@ -30,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  padding-right: 40px;
 }
 
 .cart-icon {
@@ -56,9 +57,14 @@
   margin-left: 10px;
 }
 
+.notification-icon {
+  padding-right: 20;
+}
+
 .user-icon img {
   width: 24px;
   height: auto;
+  padding-right: 30px;
 }
 
 .userName {

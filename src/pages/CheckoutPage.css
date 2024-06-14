@@ -1,16 +1,21 @@
 .checkout-container {
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
   background-color: #f7f7ff;
 }
 
 .menu-header-checkout {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   background-color: #f7f7ff;
+  margin-bottom: 20px;
 }
+
+.botao-header-voltar {
+  background-color: #f7f7ff;
+}
+
 .botao-header-pedido {
   background-color: #3cba92;
   border: none;
@@ -24,6 +29,15 @@
   transition: background-color 0.5s ease;
   font-family: Lato;
   font-weight: 700;
+}
+
+.botao-header-pedido:hover {
+  background-color: #2a9976;
+}
+
+.checkout-main {
+  display: flex;
+  justify-content: space-between;
 }
 
 .checkout-details {
@@ -40,9 +54,8 @@
 }
 
 .checkout-section {
-  flex: 1;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 15px;
   background-color: #fff;
@@ -81,12 +94,15 @@
 
 .checkout-sidebar {
   width: 300px;
-  height: 220px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 15px;
   background-color: #ffffff;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+  padding: 10px;
 }
 
 .checkout-sidebar h2 {
@@ -100,6 +116,10 @@
 }
 
 .titles-checkout {
+  border-bottom: 1px solid #999c9b;
+}
+
+.checkout-sidebar-header {
   border-bottom: 1px solid #999c9b;
 }
 
