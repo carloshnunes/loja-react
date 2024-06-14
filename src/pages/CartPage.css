@@ -1,3 +1,10 @@
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f7f7ff;
+}
+
 .menu-header-carrinho {
   display: flex;
   justify-content: space-between;
@@ -77,13 +84,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-
-.cart-page {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background-color: #f7f7ff;
 }
 
 .cart-container {
