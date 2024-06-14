@@ -1,29 +1,24 @@
 import React, { useContext } from 'react';
 import { CartContext, totalFromCart } from '../context/CartContext';
+import trashIcon from '../components/images/trash.png';
 import './CartPage.css';
 
 const CartPage = () => {
   const { cart, removeFromCart } = useContext(CartContext);
 
-  function groupProductsById(cart) {
-    const grouped = cart.reduce((acc, product) => {
-      if (!acc[product.id]) {
-        acc[product.id] = {
-          id: product.id,
-          name: product.name,
-          price: product?.price.finalPrice || 0,
-          count: 0,
-        };
-      }
-      acc[product.id].count += 1;
-      return acc;
-    }, {});
-
-    return Object.values(grouped);
-  }
+  const groupProductsById = (cart) => {
+    return Object.values(
+      cart.reduce((acc, product) => {
+        if (!acc[product.id]) {
+          acc[product.id] = { ...product, count: 0 };
+        }
+        acc[product.id].count += 1;
+        return acc;
+      }, {})
+    );
+  };
 
   const groupedCart = groupProductsById(cart);
-  console.log(groupedCart, 'groupedCart');
 
   const formatCurrency = (value) => {
     return value.toLocaleString('pt-BR', {
@@ -35,9 +30,21 @@ const CartPage = () => {
   return (
     <div className="cart-page">
       <div className="menu-header-carrinho">
-        <button className="botao-header-voltar">Voltar</button>
-        <button className="botao-header-pagamento">Ir para pagamento</button>
-        <button className="botao-header-limpar">Limpar carrinho</button>
+        <button className="botao-header-voltar">⬅ VOLTAR</button>
+        <div>
+          <button className="botao-header-pagamento">
+            IR PARA PAGAMENTO ⭢
+          </button>
+          <button className="botao-header-limpar">
+            LIMPAR CARRINHO
+            <img src={trashIcon} alt="Delete" className="delete-icon" />
+          </button>
+        </div>
+      </div>
+      <div className="menus-aba-header">
+        <p>RESUMO</p>
+        <p>PRODUTOS</p>
+        <p>INFORMAÇÕES ADICIONAIS</p>
       </div>
       <div className="cart-container">
         <div className="cart-summary">
@@ -46,32 +53,39 @@ const CartPage = () => {
               <div className="cart-item-details">
                 <h2 className="h2-titulo-carrinho">PRODUTOS</h2>
                 <h3>{item.name}</h3>
-                <p></p>
                 <div className="cart-item-quantity">
                   <button onClick={() => removeFromCart(item.id)}>-</button>
                 </div>
-                <p></p>
               </div>
               <p>
-                {item.count} un - {formatCurrency(item.price * item.count)}
+                {item.count} un - R$: {formatCurrency(totalFromCart(cart))}
               </p>
             </div>
           ))}
         </div>
         <div className="sidebar-carrinho">
           <h3 className="h3-sidebar-carrinho">VALORES</h3>
-          <div className="total-sem-impostos">
-            <p>Total sem impostos</p>
-            <p>R$: {formatCurrency(totalFromCart(cart))}</p>
-            <p>Impostos</p>
-            <p>R$: 10,00</p>
+          <div className="valores-container">
+            <div className="total-sem-impostos">
+              <p>Total sem impostos</p>
+              <p>R$: {formatCurrency(totalFromCart(cart))}</p>
+            </div>
+            <div className="impostos">
+              <p>Impostos</p>
+              <p>R$: 10,00</p>
+            </div>
           </div>
-          <p>Total:</p>
+          <div className="total">
+            <p>Total:R$:</p>
+            <p>{formatCurrency(totalFromCart(cart))}</p>
+          </div>
         </div>
       </div>
-
       <div className="user-info">
-        <h3>Informações do Usuário</h3>
+        <div className="header-user-info">
+          <h3>CLIENTE</h3>
+          <h3 className="h3-header-user">VER DETALHES</h3>
+        </div>
         <p>Nome: João Silva</p>
         <p>Email: joao.silva@example.com</p>
         <p>Endereço: Rua Exemplo, 123</p>
