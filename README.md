@@ -52,4 +52,7 @@ Este comando iniciará o servidor de desenvolvimento e abrirá o projeto em um n
 
 Acho que é isso.
 
-(https://github.com/carloshnunes/desafio-front/assets/110049855/7c86f7a7-a11f-4e5b-b329-9811e33b7ec1)
+(https://github.com/carloshnunes/desafio-front/assets/110049855/7c86f7a7-a11f-4e5b-b329-9811e33b7ec1) - Imagem da lista de produtos
+(https://github.com/carloshnunes/desafio-front/assets/110049855/c6f6228f-a90b-413e-9e3d-ea384d36e6fe) - Imagem do carrinho
+(https://github.com/carloshnunes/desafio-front/assets/110049855/d4547ffe-86c8-47f1-a43f-b15f66be55b0) - Imagem do checkout
+
