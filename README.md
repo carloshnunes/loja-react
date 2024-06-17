@@ -26,7 +26,7 @@ Passos para Abrir o Projeto
 Clone o Repositório:
 Abra o terminal (ou Git Bash no Windows) e clone o repositório usando o comando:
 
-git clone https://github.com/carloshnunes/desafio-front.git
+"git clone https://github.com/carloshnunes/desafio-front.git"
 
 Isso criará uma cópia local do repositório na máquina do usuário.
 
@@ -34,11 +34,11 @@ O próximo passo agora é instalar as dependências, então navegue até o diret
 
 e use o comando:
 
-cd desafio-front
+"cd desafio-front"
 
 Em seguida, instale as dependências do projeto usando npm com o código:
 
-npm install
+"npm install"
 
 Isso instalará todas as bibliotecas e dependências listadas no arquivo package.json.
 
@@ -46,7 +46,7 @@ Agora para executaro projeto:
 
 insira o código:
 
-npm start
+"npm start"
 
 Este comando iniciará o servidor de desenvolvimento e abrirá o projeto em um navegador padrão.
 
