@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { CartContext, totalFromCart } from '../context/CartContext';
-import nexfarIcon from './images/nexfar.png';
+import companyIcon from './images/company-logo.png';
 import cartIcon from './images/shopping-cart.png';
 import userIcon from './images/user-icon.png';
 import bellIcon from './images/bell.png';
@@ -13,11 +13,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={nexfarIcon} alt="Logo" className="logo-image" />
+        <img src={companyIcon} alt="Logo" className="logo-image" />
       </div>
       <div className="icons">
         <div className="cart-details">
-          <p className="userName">Nexfar</p>
+          <p className="userName">Cliente</p>
           <Link to="/cart" className="cart-icon">
             <img src={cartIcon} alt="Cart" />{' '}
             <span className="cart-value">R${totalFromCart(cart)}</span>
