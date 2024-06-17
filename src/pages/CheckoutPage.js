@@ -34,11 +34,10 @@ const CheckoutPage = () => {
               impostos).
             </p>
             <div className="payment-bar">
-              <p>Selecione a forma de pagamento:</p>
-              <label htmlFor="payment-method"></label>
+              <p>Selecione a forma de pagamento desejada:</p>
               <select id="payment-method">
-                <option value="">Selecione a forma de pagamento</option>
                 <option value="boleto">Boleto</option>
+                <option value="pix">Pix</option>
               </select>
             </div>
             <button className="botao-boleto">Boleto</button>
