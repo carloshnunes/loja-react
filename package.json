@@ -1,7 +1,7 @@
 {
-  "name": "projeto-nexfar",
+  "name": "loja-react-renomeado",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,8 +11,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4",
-    "proxy": "https://nexfar-static-public.s3-sa-east-1.amazonaws.com"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { CartContext, totalFromCart } from '../context/CartContext';
-import companyIcon from './images/company-logo.png';
+import companyIcon from './images/company-logo.jpg';
 import cartIcon from './images/shopping-cart.png';
 import userIcon from './images/user-icon.png';
 import bellIcon from './images/bell.png';

@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ProductList.css';
 import barcodeLogo from './images/barcode.png';
 import infoLogo from './images/info.png';
 import productPlaceholder from './images/medicine.png';
-import deleteIcon from './images/delete.png'; // Adicione um ícone de lixeira
+import deleteIcon from './images/delete.png';
 
 const ProductList = ({ addToCart, removeFromCart, products, cart }) => {
-  const [productList] = useState(products);
-
-  console.log(cart);
+  console.log('Produtos recebidos pelo ProductList:', products);
+  console.log('Carrinho:', cart);
 
   return (
     <div className="product-list">
-      {productList.map((product) => (
+      {products.map((product) => (
         <div key={product.id} className="product-item">
           <div className="product-item-header">
             <div className="header-left">
