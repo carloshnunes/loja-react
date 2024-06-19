@@ -93,16 +93,15 @@
 }
 
 .checkout-sidebar {
-  width: 300px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  background-color: #ffffff;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 220px;
-  padding: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 .checkout-sidebar h2 {

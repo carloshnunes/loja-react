@@ -1,12 +1,12 @@
 .products-page {
   display: flex;
-  background-color: #f7f7ff;
+  background-color: #ddd;
 }
 
 .main-content {
   flex: 1;
   padding: 20px;
-  background-color: #f7f7ff;
+  background-color: #fafafa;
 }
 
 .sidebar-secundaria {

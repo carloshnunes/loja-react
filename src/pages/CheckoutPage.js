@@ -12,6 +12,13 @@ const CheckoutPage = () => {
     return parseFloat(total) + parseFloat(tax);
   };
 
+  const formatCurrency = (value) => {
+    return value.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+    });
+  };
+
   const TAX_AMOUNT = 10.0;
 
   return (
@@ -52,14 +59,21 @@ const CheckoutPage = () => {
             <p>Favor entregar o pedido no período matutino.</p>
           </div>
         </div>
-        <div className="checkout-sidebar">
-          <h2 className="checkout-sidebar-header">VALORES</h2>
-          <div className="content-sidebar-checkout">
-            <p>Total (sem impostos): R${totalFromCart(cart)}</p>
-            <p>Impostos: R$ {TAX_AMOUNT.toFixed(2)}</p>
+        <div className="sidebar-carrinho">
+          <h3 className="h3-sidebar-carrinho">VALORES</h3>
+          <div className="valores-container">
+            <div className="total-sem-impostos">
+              <p>Total sem impostos</p>
+              <p>R$: {formatCurrency(totalFromCart(cart))}</p>
+            </div>
+            <div className="impostos">
+              <p>Impostos</p>
+              <p>R$: 10,00</p>
+            </div>
           </div>
-          <div className="total-sidebar-checkout">
-            Total: {calculateTotalWithTax(cart, TAX_AMOUNT).toFixed(2)}
+          <div className="total">
+            <p>Total:R$:</p>
+            <p>{formatCurrency(totalFromCart(cart))}</p>
           </div>
         </div>
       </div>
