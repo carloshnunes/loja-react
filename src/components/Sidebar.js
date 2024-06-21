@@ -13,11 +13,13 @@ import pharmacy from './images/pharmacy.png';
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <img src={pharmacy} alt="Pharmacy" />
-      <ul className="clientLogin">
-        <p>Farmácia São João</p>
-        <p>000.000.000/000-00</p>
-      </ul>
+      <div className="client-id">
+        <img src={pharmacy} alt="Pharmacy" />
+        <ul className="clientLogin">
+          <p>Farmácia São João</p>
+          <p>000.000.000/000-00</p>
+        </ul>
+      </div>
       <nav>
         <h2 className="sidebar-header">COMPRAS</h2>
         <ul>
