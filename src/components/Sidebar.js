@@ -24,7 +24,7 @@ const Sidebar = () => {
         <h2 className="sidebar-header">COMPRAS</h2>
         <ul>
           <li className="sidebar-options">
-            <Link to="#">
+            <Link to="/promotions">
               <img src={fireIcon} alt="Promotions" />
               Promoções
             </Link>

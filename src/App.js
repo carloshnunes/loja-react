@@ -4,6 +4,7 @@ import CartProvider from './context/CartContext';
 import ProductsPage from './pages/ProductsPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
+import Promotions from './pages/Promotions'; // Importe o novo componente
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import './App.css';
@@ -20,6 +21,8 @@ const App = () => {
               <Route path="/" element={<ProductsPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
+              <Route path="/promotions" element={<Promotions />} />{' '}
+              {/* Corrija a rota */}
             </Routes>
           </main>
         </div>
